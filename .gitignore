@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables — NEVER upload these
+.env
+*/.env
+backend/.env
+
+# Mac junk
+.DS_Store
+
+# Build output
+dist/
+build/
+.vite/
+
+# Logs
+*.log
+npm-debug.log*
