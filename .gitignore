@@ -19,3 +19,4 @@ build/
 *.log
 npm-debug.log*
 my-app/
+my-app/
