@@ -23,6 +23,11 @@ import {
   APIError,
 } from "./api";
 
+// 🔍 DEBUG CODE - Add this here
+console.log('Environment VITE_API_URL:', import.meta.env.VITE_API_URL);
+console.log('Final BASE_URL:', (typeof import.meta !== "undefined" && import.meta.env?.VITE_API_URL) ? import.meta.env.VITE_API_URL : "http://localhost:8080/api");
+ 
+
 // ── Design tokens ─────────────────────────────────────────────
 const T = {
   bg:      "#070D1A",
