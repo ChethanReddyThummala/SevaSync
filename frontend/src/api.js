@@ -14,10 +14,7 @@
 //  ✅ Auto-sync listener — uploads queued surveys when network returns
 // ================================================================
 
-const BASE_URL = (typeof import.meta !== "undefined" && import.meta.env?.VITE_API_URL)
-  ? import.meta.env.VITE_API_URL
-  : "http://localhost:8080/api";
-
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8080/api";
 // ── Token & user helpers ──────────────────────────────────────
 export const saveToken  = (t) => localStorage.setItem("seva_token", t);
 export const getToken   = ()  => localStorage.getItem("seva_token");
